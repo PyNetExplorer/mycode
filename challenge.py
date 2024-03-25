@@ -1,13 +1,23 @@
 #!/usr/bin/env python3
 
-name = input("What is your name?\n") #ask for a name
 
-day = input("What day of the week it is?\n") #ask for day of the week
+def main():
+    # ask for a name
+    name = input("What is your name?\n")
 
-import time #to use sleep function
-time.sleep(1) #sleep for 1 second
+    # ask for a day of the week
+    day = input("What day of the week it is?\n")
 
-print ("Hello, " + name + "! Happy " + day + "!") #print statement including user inputs name and day
+    # sleep function
+    import time
 
-time.sleep (1) #sleep for 1 second
+    # sleep for 1 second
+    time.sleep(1)
 
+    #print statement including user inputs name and day
+    print ("Hello, " + name + "! Happy " + day + "!")
+
+    # sleep for 1 second
+    time.sleep (1)
+
+main()
