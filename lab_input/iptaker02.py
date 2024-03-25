@@ -4,6 +4,9 @@
 
 def main():
 
+    # ask for a name
+    name = input("What is your name?\n")
+
     # collect string input from the user
     user_input = input("Please enter an IPv4 IP address:\n")
     
@@ -11,7 +14,7 @@ def main():
     # print("You told me the IPv4 address is: " + user_input)
     
     # print() can be given a series of objects separated by a comma
-    print("You told me the IPv4 address is:", user_input)
+    print("Hi, " + name + ". You told me the IPv4 address is:", user_input)
 
     #collect and print vendor name
     vendor_name = input ("Please enter your vendor name:\n")
