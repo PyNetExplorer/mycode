@@ -13,5 +13,6 @@ print("My " + challenge[2][1] + "! The " + challenge[2][0] + " do " + challenge[
 
 print("My " + trial[2].get('goggles') + "! The " + trial[2].get('eyes') + " do " + challenge[3] + "!")
 
-print("My " + nightmare[0].get('user').get('name').get('first') + "! The " + nightmare[0].get('kumquat') + " do " + nightmare[0].get('d') + "!")
+#print("My " + nightmare[0].get('user').get('name').get('first') + "! The " + nightmare[0].get('kumquat') + " do " + nightmare[0].get('d') + "!")
 
+print(f"My {nightmare[0]['user']['name']['first']}! The {nightmare[0]['kumquat']} do {nightmare[0]['d']}!")
