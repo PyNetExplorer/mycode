@@ -9,15 +9,14 @@ marvelchars = {
 }
 
 while True:
-    char_name = input('Which character do you want to know about? (Starlord, Mystique, Hulk)\nType here: ').lower()
+    char_name = input('Which character do you want to know about? (Starlord, Mystique, Hulk)\nType here: ')
     time.sleep(1)
 
     char_stat = input('Great choice! What statistic do you want to know about? (real name, powers, archenemy)\nType here: ')
     time.sleep(1)
    
     
-    value = marvelchars.get(char_name).get(char_stat)
-    time.sleep(1)
+    value = marvelchars[char_name.title()][char_stat.lower()]
     
     print("Let's go!")
     time.sleep(1)
@@ -29,7 +28,7 @@ while True:
     time.sleep(1)
 
         
-    print(char_name + "'s " + char_stat + " is: " + value.title())
+    print(char_name.title() + "'s " + char_stat.lower() + " is: " + value.title())
     
     # Ask user if they want to continue
     choice = input("Do you want to continue? (yes/no): ").lower()
