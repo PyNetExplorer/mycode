@@ -19,7 +19,6 @@ B = html.unescape(trivia['incorrect_answers'][0])
 C = html.unescape(trivia['incorrect_answers'][1])
 D = html.unescape(trivia['incorrect_answers'][2])
 
-html.unescape(A)
 
 print(trivia.get('question'))
 print("A. " + A)
