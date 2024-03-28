@@ -19,8 +19,20 @@ def show_menu():
     print(option_4)
     print(lines)
 
+def area_circle():
+    r = int(input('Type the radius of the circle. > '))
+    area = 3.14 * r**2
+    return area
+
+def eat_lunch():
+    pass
+
 def main():
     show_menu()
+    choice = int(input('Please make a selection. > '))
+    if choice == 1:
+        answer = area_circle()
+    print(answer)
 
 if __name__ == "__main__":
     main()
