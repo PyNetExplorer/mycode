@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """ Menu learning """
 
-option_1 = "1. Walk the dog."
+PI = 3.14159
+
+option_1 = "1. Calculate Area & Circumference of the circle."
 option_2 = "2. Eat lunch."
 option_3 = "3. Launch all the missiles."
 option_4 = "4. Quit."
@@ -21,18 +23,25 @@ def show_menu():
 
 def area_circle():
     r = int(input('Type the radius of the circle. > '))
-    area = 3.14 * r**2
-    return area
+    # Double star is exponent
+    area = PI * r**2
+    circ = r*2*PI 
+    return area, circ
 
 def eat_lunch():
     pass
 
 def main():
-    show_menu()
-    choice = int(input('Please make a selection. > '))
-    if choice == 1:
-        answer = area_circle()
-    print(answer)
+    choice = ' '
+    while choice != 4:
+        show_menu()
+        choice = int(input('Please make a selection. > '))
+        if choice == 1:
+            a, b = area_circle()
+        elif choice ==2:
+            eat_lunch()
+        print(f'The area is {a} and the circumfrence is {b}.')
+    print('Goodbye!')
 
 if __name__ == "__main__":
     main()
