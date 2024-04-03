@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
-option_1 = "1. Basic Configuration"
+option_1 = "1. Security Hardening"
 option_2 = "2. Web Server"
 option_3 = "3. Mail Server"
 option_4 = "4. Database Server"
 option_5 = "5. Quit."
 
-title = "Quick Linux Configuration"
-lines = "*"*50
+title = "Quick Linux Server Configuration"
+lines = "*"*33
 
 def show_menu():
     print(lines)
@@ -26,14 +26,14 @@ def main():
         show_menu()
         choice = int(input('Please make a selection. > '))
         if choice == 1:
-            print("Basic configuration is applied to all servers") # apply Basic Config ansible playbook to all servers
+            print("Security Hardening is applied to all servers") # apply Security Hardening ansible playbook to all servers
         
         elif choice == 2:
-            print("Web Server is created on Bender")# apply Web Server Playbook to bender
+            print("Web Server is created on server1")# apply Web Server to server1 via paramiko
         elif choice == 3:
-            print("Mail server is created on Fry")# apply Mail Server Playbook to fry
+            print("Mail server is created on server2")# apply Mail Server to server2 via paramiko
         elif choice == 4:
-            print("Database server is created on Indy")# apply Database Server Playbook to indy
+            print("Database server is created on server3")# apply Database Server to server3 via paramiko
         elif choice == 5:
             print("You are exiting this program")
             break
